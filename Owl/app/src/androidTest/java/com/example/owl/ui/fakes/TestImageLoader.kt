@@ -62,6 +62,7 @@ private class TestImageLoader : ImageLoader {
     }
 
     override suspend fun execute(request: ImageRequest): ImageResult {
+        var lei : int = 1;
         return newResult(request, ColorDrawable(Color.BLACK))
     }
 
